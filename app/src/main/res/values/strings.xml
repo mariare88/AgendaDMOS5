@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Agenda_DMOS5</string>
+    <string name="actnovo_msg_save_sucess" />
+    <string name="actnovo_msg_erro_data_missing" />
+    <string name="actnovo_hint_title" />
+    <string name="actnovo_hint_address" />
+    <string name="actnovo_button_save" />
 </resources>

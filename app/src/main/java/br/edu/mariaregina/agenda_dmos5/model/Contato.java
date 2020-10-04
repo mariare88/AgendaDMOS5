@@ -7,13 +7,14 @@ public class Contato {
     private String sobrenome;
     private int telefonefixo;
     private int telefonecelular;
+    private boolean favorito;
 
-
-    public Contato(String nome, String sobrenome,int telefonefixo, int telefonecelular) {
+    public Contato(String nome, String sobrenome) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.telefonefixo = telefonefixo;
         this.telefonecelular = telefonecelular;
+        favorito = false;
     }
 
 
@@ -26,7 +27,7 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getSobrenomeome() {
+    public String getSobrenome() {
         return sobrenome;
     }
 
@@ -48,12 +49,27 @@ public class Contato {
         this.telefonecelular = telefonecelular;
     }
 
+    public boolean isFavorito() {
+        return favorito;
+    }
+
+    public void doFavotite(){
+        this.favorito = true;
+    }
+
+
+    public void undoFavorite(){
+        this.favorito = false;
+    }
 
     @NonNull
     @Override
     public String toString() {
-        return String.format("RA: %s/n %s/n %d\n %d\n", nome , sobrenome,telefonefixo,telefonecelular);
+        return getNome();
     }
 }
+
+
+
 
 
