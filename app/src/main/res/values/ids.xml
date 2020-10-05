@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="item_adicionar" type="id" />
+    <item name="listview_contato" type="id" />
+    <item name="textview_sem_dados" type="id" />
+    <item name="fab_add_contato" type="id" />
 </resources>
